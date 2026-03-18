@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <style>
+        .spline-watermark {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-circle">N</span>
+                <span class="logo-text">Naina Soni | Developer</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero-content" id="home">
+            <div class="scroll">
+                <div class="scroll-circle"></div>
+                <div class="scroll-line"></div>
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Naina</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A Software engineer who creates user-friendly <br>
+                    interfaces and web applications.
+                </p>
+            </div>
+
+            <div class="hero-visuals">
+                <div class="robot">
+                    <iframe src='https://my.spline.design/genkubgreetingrobot-DA2gLoaS9fw1AXBCLSYcc2sn/?ui=0' frameborder='0' width='100%' height='100%'></iframe>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="img/naina resume (5).pdf" class="btn-resume" download>Download Resume</a>
+                    <a href="#contact" class="btn-contact">Hire Me</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+        <section class="about" id="about">
+            <div  class="about-text">
+                <p>INTRODUCTION</p>
+                <h1>Overview.</h1>
+                <p>I am a web Designer, expertise is to create and website design, Frontend design
+                    and many more. I'm a quick learner and collaborate closely with clients to create 
+                         efficient, scalable, and user-friendly solutions that solve real-world problems. Let's
+                         work together to bring your ideas to life!</p>
+            </div>
+            <div class="about-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-img">
+                            <img src="img/about-img.png">
+                        </div>
+                        <div class="card-text">
+                            <h3>Frontend Developer</h3>
+                        </div>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-img">
+                            <img src="img/about-img.png">
+                        </div>
+                        <div class="card-text">
+                            <h3>Mern Stack Developer</h3>
+                        </div>
+                    </div>
+                </div>               
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-img">
+                            <img src="img/about-img.png">
+                        </div>
+                        <div class="card-text">
+                            <h3>React Js Developer</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tech" id="tech">
+            <p>My tools</p>
+            <h2>Technologies.</h2>
+
+            <div class="tech-main">
+                <div class="tech-card"><img src="img/html.svg"></div>
+                <div class="tech-card"><img src="img/css.svg"></div>
+                <div class="tech-card"><img src="img/js.svg"></div>
+                <div class="tech-card"><img src="img/react.svg"></div>
+                <div class="tech-card"><img src="img/nodejs.svg"></div>
+                <div class="tech-card"><img src="img/mondoDB.svg"></div>
+                <div class="tech-card"><img src="img/express.svg"></div>
+                <div class="tech-card"><img src="img/java.svg"></div>
+            </div>
+        </section>
+
+        <section class="projects" id="Projects">
+            <div class="project-head">
+                <p>MY WORK</p>
+                <h2>Projects.</h2>
+                <p>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
+            </div>
+            <div class="project-container">
+                <a href="https://codequestbynaina.netlify.app/">
+                    <div class="project-card">
+                        <img src="img/codequest.png" alt="">
+                        <div class="project-text">
+                            <h3>Code Quest Website</h3>
+                            <p>Code Quest is a dynamic coding platform to practice and improve problem-solving skills.
+                                It offers challenges, real-time feedback, and a smooth user experience.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://neflixclonexyz.netlify.app/">
+                    <div class="project-card">
+                        <img src="img/netflix.png" alt="">
+                        <div class="project-text">
+                            <h3>Netflix Clone</h3>
+                            <p>A Netflix Clone with a modern UI for browsing and streaming movies seamlessly.
+                                Built with dynamic sections, responsive design, and smooth user experience.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://fdgbynaina.netlify.app/">
+                    <div class="project-card">
+                        <img src="img/fdg.png" alt="">
+                        <div class="project-text">
+                            <h3>FDG Clone</h3>
+                            <p>A premium jewelry website showcasing timeless diamonds and elegant gemstones.
+                                Designed with a luxurious UI and smooth user experience.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            
+            <div class="main">
+                <canvas id="galaxy"></canvas>
+            </div>
+            <div class="contact-form">
+                <p>GET IN TOUCH</p>
+                <h2>Contact.</h2>
+
+                <form>
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Your Name">
+                    <label for="name">Your email</label>
+                    <input type="email" placeholder="Your Email">
+                    <label for="name">Your Message</label>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button>Send</button>
+                </form>
+
+            </div>
+
+                <div class="earth">
+                <iframe 
+                    src="https://my.spline.design/meganodenetworkearth-Aa1Qsfa29I63PJkg71m14C02/" 
+                    frameborder="0" 
+                    width="100%" 
+                    height="100%">
+                </iframe>
+                </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2026 <span class="highlight">Naina Soni</span>. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Naina090" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/naina-soni-a760002a4" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:nainasoni226@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
