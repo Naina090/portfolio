@@ -16,19 +16,19 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 2% 10%;
     background-image: url(img/bg-img.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .navbar{
-    position: sticky;
+
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 16px 0;
+    padding:10px 60px;
     top: 0 ;
     z-index: 999;
     backdrop-filter: blur(10px);
@@ -98,6 +98,7 @@ body{
 }
 
 .hero-content{
+    padding: 2% 10%;
     flex: 1;
     display: flex;
     align-items: center;
@@ -165,7 +166,7 @@ body{
     flex: 1;
 }
 
-.robot{
+/* .robot{
     position: relative;
     display: flex;
     justify-content: center;
@@ -179,7 +180,7 @@ body{
     width: 100%;
     height: 100%;
     border: none;
-}
+} */
 
 .hero-buttons {
     display: flex; 
@@ -351,12 +352,6 @@ body{
     height: 60px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-
-}
-
 .projects{
     padding: 100px 10%;
     display: flex;
@@ -423,7 +418,36 @@ a{
 }
 
 .project-text{
-    padding: 20px;   
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.link-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaa6c3;
+    padding: 8px 15px;
+    border: 1px solid rgba(102, 126, 234, 0.4);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.link-icon i {
+    font-size: 18px;
+}
+
+.link-icon:hover {
+    color: white;
+    background: #667eea;
+    border-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
 
@@ -523,7 +547,7 @@ button:hover{
     z-index: 1;
 }
 
-.earth{
+/* .earth{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -537,8 +561,34 @@ button:hover{
     width: 100%;
     height: 100%;
     border: none;
+} */
+
+.robot {
+    width: 450px; 
+    height: 450px;
+    position: relative;
+    overflow: hidden; /* Ye logo ko bahar phenk dega */
+    border-radius: 20px;
 }
 
+.earth {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden; /* Ye logo ko bahar phenk dega */
+    border-radius: 20px;
+}
+
+.robot iframe, .earth iframe {
+    width: 100%;
+    height: 115%; /* Height thodi aur badha di hai */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    /* Niche se 12% area ko permanent block kar do */
+    clip-path: inset(0 0 17% 0); 
+}
 .footer {
     padding: 40px 10%;
     background: #050816;
